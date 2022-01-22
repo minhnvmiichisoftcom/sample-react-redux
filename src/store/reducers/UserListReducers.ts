@@ -21,7 +21,7 @@ export const userListReducers = createReducer(initialState, {
         return {
             ...state,
             users: newList
-        }
+        } 
     },
     [type.DELETE_ITEM] (state: UserState, action: IUserStateDeleteAction): UserState {
         let newList = state.users.filter(item => item.id !== action.id)
